@@ -23,13 +23,13 @@ if (!ObjectID.isValid(iduser)){
 // }).then((todo) => {
 //   console.log('Todo: ', todo);
 // });
-
-Todo.findById(id).then((todo) => {
-  if (!todo){
-    return console.log('id not found');
-  }
-  console.log('Todo By Id: ', todo);
-});
+//
+// Todo.findById(id).then((todo) => {
+//   if (!todo){
+//     return console.log('id not found');
+//   }
+//   console.log('Todo By Id: ', todo);
+// });
 
 User.findById(iduser).then((user) => {
   if (!user){
