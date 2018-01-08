@@ -14,6 +14,7 @@ const todos = [{
     completedAt: 333
 }];
 
+
 beforeEach((done) => {
   Todo.remove({}).then(() => {
     return Todo.insertMany(todos);
@@ -21,6 +22,7 @@ beforeEach((done) => {
 });
 
 describe('POST /todos', () => {
+  
   it('should create a new todo', (done) => {
     var text = 'Test todo';
 

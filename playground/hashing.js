@@ -3,18 +3,18 @@ const jwt = require('jsonwebtoken');
 const bc = require('bcryptjs');
 
 var password = '123abc!';
-// 
+//
 // bc.genSalt(10, (err, salt) => {
 //   bc.hash(password, salt, (err, hash) => {
 //     console.log(hash);
 //   });
 // });
-
-var hashedPassword = '$2a$10$.fuB/E4EHb3A9KbG5nQK.uBlkbZZnPyVEc8w9zvoIVSsP1UUOQYE6'
-
-bc.compare(password, hashedPassword, (err, res) => {
-  console.log(res);
-});
+//
+// var hashedPassword = '$2a$10$.fuB/E4EHb3A9KbG5nQK.uBlkbZZnPyVEc8w9zvoIVSsP1UUOQYE6'
+//
+// bc.compare(password, hashedPassword, (err, res) => {
+//   console.log(res);
+// });
 
 // var data = {
 //   id: 10
